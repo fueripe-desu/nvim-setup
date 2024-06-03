@@ -1,6 +1,8 @@
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
+vim.opt.guicursor = ""
+
 -- General configurations
 vim.opt.backspace = {"indent", "eol", "start"}
 vim.opt.showcmd = true
