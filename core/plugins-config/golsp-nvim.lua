@@ -15,6 +15,11 @@ return {
       end,
       group = format_sync_grp,
     })
+
+    vim.keymap.set("n", "<leader>t", ":GoTest<CR>")
+    vim.keymap.set("n", "<leader>d", ":GoDebug<CR>")
+    vim.keymap.set("n", "<leader>ds", ":GoDebug -s<CR>")
+    vim.keymap.set("n", "<leader>db", ":GoBreakToggle<CR>")
   end,
   event = {"CmdlineEnter"},
   ft = {"go", 'gomod'},
